@@ -1,20 +1,24 @@
 ## 🎯 Blog Task
 
-1. What are some differences between interfaces and types in TypeScript?
+## 1.What are some differences between interfaces and types in TypeScript?
 
-**Solution:-**
+### ✅ Solution
 
-\*Types in TypeScript are more flexible and primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
+- **Types** in TypeScript are more flexible and can represent primitives, unions, intersections, tuples, etc.
+- **Interfaces** are mainly used to describe the structure of objects.
+- **Syntax Difference:**
+  - Use `type` for creating a type alias.
+  - Use `interface` for declaring an interface.
+- **Common Features:**
+  - Both can define object shapes.
+  - Both support `readonly` and optional (`?`) properties.
+  - Both are used for type-checking and autocompletion in IDEs.
 
-\*Types use the type keyword for creating new type, while interfaces use the interface keyword for declaring an interface.
-
-\*Both can define object shapes.
-\*Both support readonly and optional properties.
-\*Both are used for type-checking and autocompletion.
+---
 
 ### 💡 Example
 
-**Type:**
+#### Using `type`
 
 ```ts
 type User1 = {
@@ -29,7 +33,7 @@ const user1: User1 = {
 };
 ```
 
-**Interface:**
+#### Using `type`
 
 ```ts
 Interface User2 {
@@ -45,7 +49,7 @@ const user1: User1 = {
 };
 ```
 
-2. Provide an example of using **union** and **intersection** types in TypeScript.
+## 2. Provide an example of using **union** and **intersection** types in TypeScript.
 
 **Solution:-**
 
