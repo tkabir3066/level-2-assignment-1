@@ -147,5 +147,36 @@
 
   getDayType(Day.Monday); // Output: "Weekday"
   getDayType(Day.Sunday); // Output: "Weekend"
+
+  //8.
+
+  async function squareAsync(n: number): Promise<number> {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (n < 0) {
+          reject(new Error("Negative number not allowed"));
+        } else {
+          resolve(n * n);
+        }
+      }, 1000);
+    });
+  }
+
+  //   squareAsync(4).then(console.log); // Output after 1s: 16
+  //   squareAsync(-3).catch(console.error); // Output: Error: Negative number not allowed
+
+  // alternative solution -
+
+  (async () => {
+    try {
+      const result1 = await squareAsync(9);
+      console.log(result1);
+      const result2 = await squareAsync(-3);
+      console.log(result2);
+    } catch (error) {
+      console.log(error);
+    }
+  })();
+
   //------------------------------------End---------------------------------//
 }
