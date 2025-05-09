@@ -33,7 +33,7 @@ const user1: User1 = {
 };
 ```
 
-#### Using `type`
+#### Using `interface`
 
 ```ts
 Interface User2 {
